@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOTA2ITEM</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body style="background-color: #000208;" link="white" vlink="#cecece" alink="#838383">
+    <header>
+        <script src="style/script.js"></script>
+        <nav class="navbar">
+            <div class="navbar-brand"><img src="pics/dota2item.svg" width="150" height="90"></div>
+            <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><button id="immortalButton">Immortal</button></li>
+                <li><button id="arcaneButton">Arcane</button></li>
+                <li><button id="showAllButton">All</button></li>
+                <li><input type="text" id="searchInput" placeholder="Поиск по Dota2Item" autofocus></li>
+                <li><div><button id="openCartBtn">Корзина</button></div></li> 
+            </ul>
+        </nav>
+    </header>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cartItems"></div>
+            <div>Общая сумма: <span id="totalPrice">0</span> $</div>
+            <button id="checkoutBtn"><h1>Оформить заказ</h1></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item" alt="arcana">
+            <img src="pics/Bladeform Legacy.png">
+            <div class="item-details">
+                <div class ="name">Bladeform Legacy</div>
+                <div class="arcana">rarity - immortal</div>
+                <button class="add-to-cart-btn"><img src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">22,28$</div>
+            </div>
+        </div>
+        <div class="item" alt="immorta">
+            <a href="html/Blade of Tears.html">
+            <img src="pics/Blade of Tears.png"></a>
+            <div class="item-details">
+                <div class="name">Blade of Tears</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">20,92$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immorta">
+            <img src="pics/Genuine Eternal Radiance Blades.png">
+            <div class="item-details">
+                <div class ="name">Genuine Eternal Blades</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">20,21$</div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="pics/Blistering Shade.png"  alt="immortal">
+            <div class="item-details">
+                <div class ="name">Blistering Shade</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">6,04$</div>
+            </div>
+        </div>
+        <div class="item"  alt="arcana">
+            <img src="pics/Fractal Horns of Inner Abysm.png">
+            <div class="item-details">
+                <div class ="name">Fractal Horns of Abysm</div>
+                <div class="arcana">rarity - Arcana</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">22,04$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <img src="pics/Weapon of the Ardalan Interdictor.png">
+            <div class="item-details">
+                <div class ="name">Weapon of the Ardalan</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">120,21$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <img src="pics/Genuine Golden Lamb to the Slaughter.png">
+            <div class="item-details">
+                <div class ="name">Genuine Golden Lamb </div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">104,08$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <img src="pics/Genuine Golden Pale Mausoleum.png">
+            <div class="item-details">
+                <div class ="name">Genuine Golden Pale</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">137,33$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <img src="pics/Genuine Skittering Desolation.png">
+            <div class="item-details">
+                <div class ="name">Genuine Desolation</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">9,50$</div>
+                </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <a href="html/God's Mercy of Witness.html">
+            <img src="pics/God's Mercy of the Crimson Witness.png"></a>
+            <div class="item-details">
+                <div class ="name">God's Mercy of the Crimson</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">429,43$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <img src="pics/Inscribed Dragonclaw Hook.png">
+            <div class="item-details">
+                <div class ="name">Inscribed Dragonclaw Hook</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">178,40$</div>
+            </div>
+        </div>
+        <div class="item" alt="arcana">
+            <img src="pics/Feast of Abscession.png" >
+            <div class="item-details" >
+                <div class ="name">Feast of Abscession</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">21,60$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <img src="pics/Inscribed Transversant Soul of the Crimson Witness.png">
+            <div class="item-details">
+                <div class ="name">Soul of the Crimson </div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">1065,06$</div>
+            </div>
+        </div>
+        <div class="item"  alt="immortal">
+            <a href="html/Mace of Aeons.html">
+            <img src="pics/mace of aeons.png"></a>
+            <div class="item-details">
+                <div class ="name">Mace Of Aeons</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">316,48$</div>
+            </div>
+        </div>
+        <div class="item" alt="arcana">
+            <img src="pics/Manifold Paradox.png">
+            <div class="item-details">
+                <div class ="name">Manifold Paradox</div>
+                <div class="arcana">rarity - Arcana</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">24,54$</div>
+            </div>
+        </div>
+        <div class="item" alt="immortal">
+            <img src="pics/Mantle of the Whispered Bond.png">
+            <div class="item-details">
+                <div class ="name">Mantle of the Whispered</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">1,87$</div>
+            </div>
+        </div>
+        <div class="item" alt="immortal">
+            <a href="html/Origins of Faith.html">
+            <img src="pics/Origins of Faith.png"></a>
+            <div class="item-details">
+                <div class ="name">Origins of Faith</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">4,33$</div>
+            </div>
+        </div>
+        <div class="item" alt="immortal">
+            <img src="pics/Radiant Conqueror Back.png">
+            <div class="item-details">
+                <div class ="name">Radiant Conqueror Back</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">50,23$</div>
+            </div>
+        </div>
+        <div class="item" alt="immortal">
+            <img src="pics/Righteous Thunderbolt.png">
+            <div class="item-details">
+                <div class ="name">Righteous Thunderbolt</div>
+                <div class="immortal">rarity - immortal</div>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">16,19$</div>
+            </div>
+        </div>
+        <div class="item" alt="immortal">
+            <a href="html/Shadow in the Deep Slark.html"><img src="pics/Shadow in the Deep.png">
+            <div class="item-details">
+                <div class ="name">Shadow in the Deep</div>
+                <div class="immortal">rarity - immortal</div></a>
+                <button><img class="add-to-cart-btn" src="pics/корзина-removebg-preview.png"></button>
+                <div class="price">10,76$</div>
+            </div>
+        </div>
+    </div>
+    <button id="backToTopBtn"> ↑ </button>
+    <footer>
+        <div><h3>Контактная информация:</h3></div>
+        <h4><div>Сайт сделал</div>
+        <div>Бондарик Никита Дмитриевич</div>
+        <div>Студент 1 курса ФИТ 1-9</div> </h4>
+        <div>Почта: <a>nikitabondarik@mail.ru</a></div>
+        <div><a href="https://vk.com/milesfromhere">VK: @milesfromhere </a></div>
+    </footer>
+    <script src="products.json"></script> 
+    <script src="style/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,20 @@
+.top {
+  width: 90%;
+  margin: left;
+  padding: 0 15px;
+}
+
+header {
+  width: 90%;
+  height: 10px;
+  background-color: #0C0C0D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+/*# sourceMappingURL=header.css.map */

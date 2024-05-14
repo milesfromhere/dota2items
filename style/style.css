@@ -1,0 +1,378 @@
+
+.navbar {
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: none;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-menu li {
+  margin-right: 20px;
+}
+.navbar-menu li:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+      width: 240px;
+      height: 124px;
+  }
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #222;
+      width: 100%;
+      top: 60px; 
+      left: 0;
+      padding: 10px 0;
+      z-index: 1000;
+  }
+  .navbar-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  .navbar-menu li:last-child {
+      margin-bottom: 0;
+  }
+  .navbar-menu.open {
+      display: flex;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .container {
+      padding: 0;
+  }
+  .item {
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+  .name,
+  .arcana,
+  .immortal,
+  .price {
+      margin: 5px;
+  }
+  .item img {
+      max-width: 100%;
+      height: auto;
+  }
+  #searchInput {
+      width: calc(100% - 20px);
+  }
+  .container button {
+      width: 50px;
+      height: 25px;
+      margin-top: -30px;
+  }
+  .basket {
+      width: 28px;
+      height: 25px;
+  }
+  .basket button {
+      margin-top: 20px;
+  }
+  footer {
+      height: auto;
+  }
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; 
+    margin-bottom: 10px;
+}
+.modal {
+  text-align: center;
+  color: white;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #333;
+  margin: 15% auto; 
+  padding: 500px;
+  width: 100%;
+  max-width: 50px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  padding: 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 330px;
+          flex: 1 1 330px;
+  max-width: 310px;
+  height: auto;
+  background-color: #333;
+  overflow: hidden;
+  padding: 3px;
+  font-family: Avro;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.item:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.item:active img {
+  transform: scale(0.9);
+}
+
+.top {
+  width: 90%;
+  margin: left;
+  padding: 0 15px;
+}
+
+header {
+  width: 90%;
+  height: 10px;
+  background-color: #0C0C0D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.name {
+  text-align: left;
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
+}
+
+.immortal {
+  margin-left: 15px;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Trebuchet MS", sans-serif;
+  color: #838383;
+  font-size: 10px;
+}
+
+.arcana {
+  margin-left: 15px;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Trebuchet MS", sans-serif;
+  color: #838383;
+  font-size: 10px;
+}
+
+.price {
+  text-align: right;
+  font-family: "Impact", fantasy;
+  color: white;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  font-family: "Trebuchet MS", sans-serif;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  color: white;
+  margin: 17px;
+}
+
+button:hover {
+  color: #838383;
+}
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #0C0C0D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#backToTopBtn:hover {
+  background-color: #838383;
+}
+
+#searchInput {
+  background-color: #0C0C0D;
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  border-color: #0C0C0D;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#searchInput:focus {
+  color: white;
+  outline: none;
+  border-color: #007bff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#searchInput:hover {
+  border-color: #007bff;
+}
+
+footer {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #0C0C0D;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+}
+.container button {
+  width: 60px;
+  height: 30px;
+  float: right;
+  margin-top: -35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.basket {
+  margin-top: -5px;
+  width: 33px;
+  height: 30px;
+}
+
+li button {
+  margin-top: 30px;
+
+}
+.container button:hover {
+  transform: scale(1.1);
+}
+
+.container button:active {
+  transform: scale(0.9);
+}
+
+.basket button:hover {
+  transform: scale(1.1);
+}
+
+.basket:active {
+  transform: scale(0.9);
+}
+
+a {
+  text-decoration: none;
+}
+.modal {
+  text-align: center;
+  color: white;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #333;
+  margin: 15% auto; 
+  padding: 20px;
+  width: 80%;
+  max-width: 600px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close {
+  color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

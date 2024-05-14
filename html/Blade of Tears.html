@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade of Tears</title>
+    <link rel="stylesheet" href="../style/openedstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background-color: #000208;" link="white" vlink="#cecece" alink="#838383">
+    <header>
+        <nav class="navbar">
+            <script src="../style/script.js"></script>
+            <div class="navbar-brand"><a href="../dota2item.html"><img src="../pics/dota2item-removebg-preview.png" width="200" height="120"></a></div>
+        </header>
+    <button id="backToTopBtn"> ↑ </button>
+    <div class="container">
+        <div class="frame">
+            <div class="image">
+                <img src="../pics/Blade of Tears.png" alt="Blade of Tears">
+            </div>
+            <div class="input-group">
+            </div>
+            <div class="input-group">
+            </div>
+            <div class="input-group">
+            </div>
+            <div class="input-group">
+            </div>
+        </div>
+        <div class="frame">
+            Blade of Tears
+            <br>
+            <name>Morphling</name>
+            <div>Rarity: Immortal</div>
+            <p class="price">20,92$</p>
+            <div>Описание:</div>
+
+                <div>Так же, как и Morphling, находящийся сразу в земном и астральном измерении, этот клинок — оружие удивительно гибкое, одновременно материальное и призрачное. Лишь слезы поверженных реальны.</div>
+                <br></br>
+                <canvas id="priceChart" width="200" height="100"></canvas>
+                <script>
+                    var ctx = document.getElementById('priceChart').getContext('2d');
+            
+                    var prices = [25.12, 24.98, 21.11, 25.52, 20.92 ];
+                    var labels = ['Янв', 'Фев', 'Мар', 'Апр', 'Май' ];
+            
+                    var priceChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Цены',
+                                data: prices,
+                                borderColor: 'blue',
+                                borderWidth: 2
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>  
+            </div>
+        </div>
+    </div>
+    <div class="frame">
+        Похожие предметы:  
+</div>
+<div class="some-container">
+    <div class="some">
+        <a href="Shadow in the Deep Slark.html">
+        <img src="../pics/Shadow in the Deep.png" alt="Товар 1"></a>
+        <h2 class="name">Shadow in the Deep</h2>
+        <div class="immortal">rarity - immortal</div>
+        <button><img src="../pics/корзина-removebg-preview.png"></button>
+        <p class="price">10,76$</p>
+    </div>
+    <div class="some">
+        <a href="Mace of Aeons.html">
+        <img src="../pics/mace of aeons.png" alt="Товар 2"></a>
+        <h2 class="name">Mace of Aeons</h2>
+        <div class="immortal">rarity - immortal</div>
+        <button><img src="../pics/корзина-removebg-preview.png"></button>
+        <p class="price">316,48$</p>
+    </div>
+    <div class="some">
+        <a href="God's Mercy of Witness.html">
+        <img src="../pics/God's Mercy of the Crimson Witness.png" alt="Товар 2"></a>
+        <h2 class="name">God's Mercy of Witness</h2>
+        <div class="immortal">rarity - immortal</div>
+        <button><img src="../pics/корзина-removebg-preview.png"></button>
+        <p class="price">429,43$</p>
+    </div>
+    <div class="some">
+        <a href="Origins of Faith.html">
+        <img src="../pics/Origins of Faith.png" alt="Товар 2"></a>
+        <h2 class="name">Origins of Faith</h2>
+        <div class="immortal">rarity - immortal</div>
+        <button><img src="../pics/корзина-removebg-preview.png"></button>
+        <p class="price">4,33$</p>
+    </div>
+    <footer><div><h3>Контактная информация:</h3></div>
+    <h4><div>Сайт сделал</div>
+    <div>Бондарик Никита Дмитриевич</div>
+    <div>Студент 1 курса ФИТ 1-9</div> </h4>
+    <div>Почта: <a>nikitabondarik@mail.ru</a></div>
+    <div><a href="https://vk.com/milesfromhere">VK: @milesfromhere </a></div>
+    </footer>
+</body>
+</div></html>

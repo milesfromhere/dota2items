@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 11px;
+    justify-content: center;
+}
+
+.item {
+    flex: 1 1 330px; 
+    max-width: 310px; 
+    height: auto;
+    background-color: #333;
+    overflow: hidden;
+    padding: 3px;
+    font-family: Avro;
+}
+a {
+    font-family: Avro;
+    color: white;
+}
+.item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+.top {
+    width: 90%;
+    margin: left;
+    padding: 0 15px;
+}
+header {
+    width: 90%;
+    height: 10px;
+    background-color: #0C0C0D;
+    display: flex;  
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.name {
+    text-align: left;
+    font-family:'Trebuchet MS', sans-serif;
+    color: white;
+    
+    margin-left: 15px;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: lighter;
+}
+.immortal{
+    margin-left: 15px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family:'Trebuchet MS', sans-serif;
+    color: #838383;
+    font-size: 10px;
+}
+.arcana{
+    margin-left: 15px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family:'Trebuchet MS', sans-serif;
+    color: #838383;
+    font-size: 10px;
+}
+.price {
+    text-align:right;
+    font-family:'Impact', fantasy;;
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+button {
+    font-family:'Trebuchet MS', sans-serif;
+    border: none; 
+    background: none;
+    cursor: pointer; 
+    padding: 0; 
+    color: white;
+    margin: 17px;
+}
+button:hover{
+    color:#838383;
+}
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Начальное скрытие кнопки */
+    background-color: #0C0C0D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999; /* Чтобы кнопка была поверх других элементов */
+}
+
+#backToTopBtn:hover {
+    background-color: #838383; /* Изменение цвета при наведении */
+}
+#searchInput {
+    background-color:#0C0C0D ;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-color: #0C0C0D;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#searchInput:focus {
+    color: white;
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#searchInput:hover {
+    border-color: #007bff;
+}
+
+
+footer {
+    font-family:'Trebuchet MS', sans-serif;
+    background-color: #0C0C0D;
+    color: white;
+    padding: 20px; 
+    text-align: left; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height:400px;
+}
+
+

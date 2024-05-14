@@ -1,0 +1,62 @@
+a {
+    font-family: Avro;
+    color: white;
+}
+
+button {
+    font-family: 'Trebuchet MS', sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    color: white;
+    margin: 17px;
+}
+
+button:hover {
+    color: #838383;
+}
+
+button:hover {
+    color: #838383;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #0C0C0D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#backToTopBtn:hover {
+    background-color: #838383;
+}
+
+#searchInput {
+    background-color: #0C0C0D;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-color: #0C0C0D;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#searchInput:focus {
+    color: white;
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#searchInput:hover {
+    border-color: #007bff;
+}

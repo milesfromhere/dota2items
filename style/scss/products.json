@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Bladeform Legacy",
+      "price": 22.28,
+      "image": "pics/Bladeform Legacy.png",
+      "rarity": "immortal"
+    },
+    {
+      "name": "Blade of Tears",
+      "price": 20.92,
+      "image": "pics/Blade of Tears.png",
+      "rarity": "immortal"
+    },
+    {
+      "name": "Genuine Eternal Radiance Blades",
+      "price": 20.21,
+      "image": "pics/Genuine Eternal Radiance Blades.png",
+      "rarity": "immortal"
+    }
+  ]
+  
