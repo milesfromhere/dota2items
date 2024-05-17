@@ -40,14 +40,11 @@
                 <br></br>
                 <canvas id="priceChart" width="200" height="100"></canvas>
                 <script>
-                    // Получаем контекст canvas
                     var ctx = document.getElementById('priceChart').getContext('2d');
             
-                    // Задаем данные для графика (можете заменить эти данные своими)
                     var prices = [15.12, 15, 12, 13.66, 10.76 ];
                     var labels = ['Янв', 'Фев', 'Мар', 'Апр', 'Май' ];
             
-                    // Создаем новый объект графика
                     var priceChart = new Chart(ctx, {
                         type: 'line',
                         data: {
